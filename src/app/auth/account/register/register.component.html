@@ -1,0 +1,103 @@
+<main>
+
+    <div class="container">
+
+        <div class="image">
+            <img src="logoLogin.jpg" alt="">
+        </div>
+
+        <div class="formulario">
+
+            <div class="titles">
+                <div class="iconeRegistry">
+                    <i class="pi pi-users"></i>
+                </div>
+                <h3 id="accountTitle" style="color: orangered;">Criar nova conta</h3>
+                <h6 id="accountSubtitle">Cisdente sempre ao seu lado</h6>
+            </div>
+
+            <form [formGroup]="formulario">
+
+                <div class="fields">
+
+                    <div class="containerField">
+                        <div class="field"> <label for="">Nome</label> <input type="text" pInputText placeholder="Nome" formControlName="nome"> </div>
+                        <div class="field"> <label for="">E-mail</label> <input type="email" pInputText placeholder="E-mail ou número" formControlName="email"> </div>
+                        <div class="field">
+                            <label for="">Genero</label> <input type="text" pInputText placeholder="Genero" formControlName="genero">
+                        </div>
+                        <div>
+                           <div class="field"> <label for="">Confirmar Senha</label> <input type="password" pInputText placeholder="Confirmar Senha" formControlName="confirmPassword" > </div>
+                        </div>
+                    </div>
+                    
+                    <div class="containerField-2">
+                        <div class="field"> <label for="">Número de telefone</label> <input type="number" pInputText placeholder="Celular" formControlName="numero"> </div>
+                        
+                        <div class="field"> 
+                            <label for="">Data de nascimento</label>
+                                <p-datepicker
+                                    dateFormat="dd/mm/yy"
+                                    placeholder="Data de nascimento"
+                                    inputId="dataNascimento"
+                                    [yearNavigator]="true"
+                                    [monthNavigator]="true"
+                                    yearRange="1900:2026"
+                                    [showIcon]="true"
+                                    formControlName="dataNascimento"
+                                ></p-datepicker>
+                        </div>
+                        <div>
+                           <div class="field"> <label for="">Senha</label> <input type="password" pInputText placeholder="password" formControlName="password"> </div>
+                        </div>
+
+                        <a href="" class="forgot">Esqueceu a senha ?</a>
+                    </div>
+                    
+                </div>
+
+                <div class="remember">
+                    <div>
+                        <p-check-box binary="true"></p-check-box>
+                        <label for="" style="margin-left: 5px;">Lembrar-me</label>
+                    </div>
+                    
+                    <div>
+                        <p-check-box binary="true"></p-check-box>
+                        <label for="" style="margin-left: 5px;"> Eu concordo com os <a href="">Termos & Privacidade</a> e Politica</label>
+                    </div>
+                   
+                </div>
+
+                <div class="btnRegistry">
+                    <button pButton label="Criar conta" class="btn-registry" (click)="criarConta()"></button> 
+                </div>
+                
+                <div class="optionalButtons"> 
+
+                    <div class="fb">
+                        <button pButton type="button" label="Facebook" 
+                        icon="pi pi-facebook" class="p-button-primary"></button>
+                    </div>
+
+                    <div class="google">
+
+                        <button pButton type="button" label="Google" 
+                        icon="pi pi-google" class="p-button-danger"></button>
+
+                    </div>
+
+                </div>
+                <h6 style="text-align: center;">Cisdente - Todos os direitos reservados</h6>
+                <div class="icones">
+                    <i class="pi pi-facebook"></i>
+                    <i class="pi pi-whatsapp"></i>
+                    <i class="pi pi-twitter"></i>
+                </div>
+            </form>     
+
+        </div>
+
+    </div>  
+</main>
+

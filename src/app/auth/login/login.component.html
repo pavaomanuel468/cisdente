@@ -1,0 +1,82 @@
+
+<div class="container">
+
+    <div class="image">
+
+        <img src="logoLogin.jpg" alt="">
+
+    </div>
+
+    <div class="formContainer">
+        <div class="iconeRegistry">
+            <i class="pi pi-users"></i>
+        </div>
+        <form [formGroup]="formulario">
+
+           <div class="iconeLogo">
+
+                <h2 style="text-align: center; margin-top: 30px; margin-bottom: 5px; color: orangered;">Cisdente</h2>
+                <h5 style="margin-bottom: 5px; text-align: center;">Sempre ao seu lado na provincia</h5>
+                <h6 style="text-align: center; margin-bottom: 20px;" ><a href="/novaConta" style="color: blue; ">Criar nova conta</a></h6>
+                 
+            </div> 
+            <div class="fields">
+
+                <div class="p-inputgroup w-full">
+                    <span class="p-inputgroup-addon">
+                        <i class="pi pi-user"></i>
+                    </span>
+                    <input class="pCampo" type="text" pInputText placeholder="Celular" formControlName="login">
+                </div>
+
+                <div class="p-inputgroup w-full">
+                    <span class="p-inputgroup-addon">
+                        <i class="pi pi-lock"></i>
+                    </span>
+                    <input class="pCampo" type="password" pInputText placeholder="Senha" formControlName="password">
+                </div>
+
+            </div>
+
+            <div class="remember"> 
+
+                <div class="caixa">
+                    <p-check-box binary="true">
+                        <label for="">Lembrar-me</label>
+                    </p-check-box>
+                </div>
+
+                <div class="forgot">
+
+                    <a href="">Esqueceu a senha</a>
+
+                </div>
+
+            </div>
+
+            <button class="logar" pButton type="button" label="login" 
+            icon="pi pi-sign-in" [loading]="loading" (click)="login()"></button>
+
+            <div class="diviser">
+                <span>Ou faça Login com</span>
+            </div>
+
+            <div class="optionalButtons"> 
+
+                <div class="caixa">
+                    <button pButton type="button" label="Facebook" 
+                    icon="pi pi-facebook" class="p-button-primary"></button>
+                </div>
+
+                <div class="forgot">
+
+                    <button pButton type="button" label="Facebook" 
+                    icon="pi pi-google" class="p-button-danger"></button>
+
+                </div>
+
+            </div>
+        </form>
+       
+    </div>
+</div>

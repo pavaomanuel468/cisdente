@@ -1,0 +1,37 @@
+<div class="carousel">
+
+    <div class="group">
+
+        <p-carousel 
+            [value]="items" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="3000"> 
+
+            <ng-template let-item pTemplate="item">
+
+                <p-card header="{{item.title}}" subheader="{{item.subtitle}}">
+
+                    <ng-template pTemplate="content">
+
+                        <i class="pi pi-wallet"></i>
+
+                    </ng-template>
+
+                    <ng-template pTemplate="footer">
+                        <i class="pi pi-check-circle"></i>
+                        <h5 class="oldPrice" style="text-decoration: line-through;">{{item.oldPrice}}</h5>
+                        <h3 class="newPrice" style="color: orangered;">{{item.newPrice}}</h3>
+                    </ng-template>
+
+                </p-card>
+
+                <p-button styleClass="botao" pButton label="Escolher"></p-button>
+
+            </ng-template>
+
+        </p-carousel>     
+
+    </div>
+    <div class="group-mobile">
+        
+    </div>
+
+</div>

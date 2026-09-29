@@ -1,0 +1,119 @@
+<section id="container">
+
+    <div id="container-child">
+        <div>
+            <h3 class="title">Agenda De Consultas</h3>
+            <h5 class="secondTitle" >Marque suas consultas com eficacia</h5>
+        </div>
+        <div id="buttonsOptionals">
+
+            <p-buttongroup>
+                <p-button> <i class="pi pi-calendar"></i> DIÁRIO</p-button>
+                <p-button> <i class="pi pi-calendar-plus"></i> SEMANAL</p-button>
+                <p-button> <i class="pi pi-calendar"></i> MÊS</p-button>
+                <p-button> <i class="pi pi-calendar-clock"></i> ANO</p-button>
+            </p-buttongroup>
+
+        </div>
+
+        <div id="divisor"></div>
+
+        <p-button label="ATUALIZAR" icon="pi pi-refresh"></p-button>
+
+    </div>
+
+    <div id="container-child">
+
+        <div id="buttonsOptionals">
+            <div>
+                <p-button-group>
+                    <p-button> <i class="pi pi-users"></i> TODOS</p-button>
+                    <p-button> <i class="pi pi-whatsapp"></i> WHATSAPP</p-button>
+                    <p-button> <i class="pi pi-pencil"></i>MANUAL</p-button>
+                </p-button-group>
+            </div>
+        </div>
+
+        <p-button> <i class="pi pi-plus"></i> NOVO AGENDAMENTO</p-button>
+
+        <div>
+    
+            <p-select
+                [options]="opcoes" (ngModel)="opcaoSelecionada" optionLabel="nome" placeholder="SELECIONAR">
+            </p-select>
+            
+        </div>
+
+        <p-datepicker (ngModel)="dataSelecionada" placeholder="SELECIONAR DATA"
+            dateFormat="dd/mm/yy" showIcon="true">
+        </p-datepicker>
+    
+    </div>
+
+</section>
+
+<section id="container-2">
+
+    <div class="agenda-container">
+
+        <div class="tabela-container">
+
+            <p-table [value]="consultas" styleClass="p-datatable-sm">
+
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>DATA</th>
+                        <th>HORÁRIO</th>
+                        <th>PACIENTE</th>
+                        <th>PROCEDIMENTO</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </ng-template>
+
+                <ng-template pTemplate="body" let-consulta let-i="rowIndex">
+
+                    <tr>
+                        <td> {{consulta.data}} </td>
+                        <select name="" id="marcar-horario">
+                            <option value="" id="title-hora">MARCAR HORÁRIO</option>
+                            <option value="08:30"id="hora" >08:30</option>
+                            <option value="12:30" id="hora">12:30</option>
+                            <option value="15:30"id="hora" >15:30</option>
+                        </select>
+                        <td> 
+                            <input type="text" pInputText (ngModel)="consulta.paciente" placeholder="Nome do paciente">    
+                        </td>
+                        <td>
+                            <p-select [options]="procedimentos" (ngModel)="consulta.procedimento" placeholder="Selecionar" appendTo="body"></p-select>
+                        </td>
+                        <td>
+                            <p-button [label]="consulta.concluido ? 'Concluido':'Pendente'" [icon]="consulta.concluido? 'pi pi-check':'pi pi-clock'"
+                            [severity]="consulta.concluido?'success':'secondary'" size="small" (onClick)="alterarEstado(i)"></p-button>
+                        </td>
+
+                    </tr>
+
+                </ng-template>
+
+            </p-table>
+
+        </div>
+
+        <div class="descricao">
+
+            <label for="descricao">Fale um pouco sobre oque sente</label>
+
+            <textarea pTextarea id="descricao" rows="8" (ngModel)="descricao" placeholder="Descreva brevemente oque esta sentindo..."></textarea>
+
+            <p-button label="Enviar agendamento" icon="pi pi-second" [severity]="'success'" (onClick)="enviarAgendamento()"></p-button>
+
+        </div>
+
+    </div>
+
+    
+
+</section>
+
+<app-section-six></app-section-six>
+ 

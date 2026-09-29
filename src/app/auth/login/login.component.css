@@ -1,0 +1,94 @@
+.container{
+    margin-top: 2rem;
+    justify-content: center;
+    display: flex;
+    gap: 10rem;
+    background-color: white;
+}
+.iconeRegistry {
+    text-align: center;
+}
+.iconeRegistry i{
+    font-size: 38px;
+    color: blue;
+}
+/*.pi-user{
+    color: blue;
+    font-size: 5rem;
+    background-color: rgb(9, 229, 108);
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 115px;
+} */
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+.campo{
+    width: 350px;
+}
+.p-inputgroup{
+    width: 350px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.formContainer{
+   padding-bottom: 20px;
+}
+.p-inputgroup-addon i{
+    font-size: 1.5rem;
+}
+.pCampo{
+    width: 350px;
+    height: 50px;
+}
+.remember{
+    display: flex;
+    gap: 59%;
+}
+.logar{
+    margin-top: 3rem;
+    width: 350px;
+    height: 50px;
+    border-radius: 19px;
+    margin-left: 20px
+}
+.diviser{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+.diviser::before,
+.diviser::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+.diviser span{
+    padding: 0 10px;
+}
+.optionalButtons{
+    display: flex;
+    gap: 33%;
+    margin-left: 20px;
+}
+@media(max-width: 1024px){
+    .image{
+        display: none;
+    }
+    
+}
+@media(max-width: 1400px){
+    .image{
+        display: none;
+    }
+  
+}

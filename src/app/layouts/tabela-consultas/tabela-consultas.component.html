@@ -1,0 +1,108 @@
+<header>
+    <app-header></app-header>
+    <app-section-six></app-section-six>
+</header>
+
+<section class="tabela-geral">
+
+    <div class="consultas-container">
+
+        <div class="cabecalho">
+
+            <div>
+                <button pButton type="button" label="MARCAR CONSULTA" routerLink="/marcarConsulta"></button>
+                <h1 style="color: rgb(179, 79, 43);">Consultas</h1>
+                <p>
+                    Consulte os tipos de atendimentos disponiveis, os respectivos preços
+                    e a duração de cada consulta
+                </p>
+            </div>
+
+        </div>
+
+        <div class="tabela-card">
+            <p-table
+            [value]="consultas"
+            [paginator]="true"
+            [rows]="8"
+            [rowsPerPageOptions]="[5, 10, 20]"
+            [responsiveLayout]="'scroll'"
+            styleClass="tabela-consultas">
+
+                <ng-template pTemplate="header" >
+                    <tr>
+                        <th>Consulta</th>
+                        <th>Descrição</th>
+                        <th>Duração</th>
+                        <th>Preço</th>
+                        <!--<th>Ação</th>-->
+                    </tr>
+                </ng-template>
+
+                <ng-template pTemplate="body" let-consulta>
+
+                    <tr>
+
+                        <td>
+                            <div class="nome-consulta">
+
+                                <div class="icone">
+                                    <i class="fa-solid fa-user-doctor" style="color: blue; "></i>
+                                </div>
+
+                                <span>{{consulta.tipoDeConsulta}}</span>
+
+                            </div>
+                        </td>
+
+                        <td class="descricao">
+                            {{consulta.descricao}}
+                       
+                        </td>
+
+                        <td>
+                            <span class="duracao">
+
+                                <i class="pi pi-clock" style="color: orangered;"></i>
+                                {{consulta.duracao}} min
+
+                            </span>
+                        </td>
+                  
+
+                  
+                        <td>
+                            <span class="preco">
+
+                                <i class="fa-solid fa-money-bill" style="color: orangered;"></i>
+                                {{consulta.preco}}
+
+                            </span>
+                        </td>
+                 
+
+                    
+                        <!--<td>
+                            <button pButton type="button" label="Agendar Consulta" icon="pi pi-calendar" class="btn-agendar" (click)="agendar(consulta)"></button>
+                        </td>-->
+                    </tr>
+
+
+                </ng-template>
+
+                <ng-template pTemplate="emptymessage">
+
+                    <tr>
+                        <td colspan="5" class="sem-resultados">
+                            Nenhuma consulta disponivel.
+                        </td>
+                    </tr>
+
+                </ng-template>
+
+            </p-table>
+        </div>
+
+    </div>
+
+</section>

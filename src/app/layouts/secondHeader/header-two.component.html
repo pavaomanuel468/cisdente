@@ -1,0 +1,16 @@
+<p-toolbar class="second-toolbar" >
+    
+        <p-menubar [model]="items" class="custom-menubar">
+            <ng-template pTemplate="start">
+                <span class="logo">
+                    Cisdente<span class="primary"> <i class="fas fa-tooth"></i>  Co</span>
+                </span>
+            </ng-template>
+            <ng-template pTemplate="end">
+                <a href=""><p-avatar icon="pi pi-user" styleClass="p-mr-2" shape="circle" class="me-2"></p-avatar></a> 
+                <a href=""> <p-avatar icon="pi pi-shopping-cart" styleClass="p-mr-2" shape="circle" class="me-2"></p-avatar></a>
+                <a href=""> <p-avatar icon="pi pi-envelope" styleClass="p-mr-2" shape="circle" class="me-2"></p-avatar></a>
+            </ng-template>
+        </p-menubar>
+    
+</p-toolbar>

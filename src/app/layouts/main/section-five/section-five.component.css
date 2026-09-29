@@ -1,0 +1,29 @@
+section{
+    background-image: url('/teamC.png');
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.group-mobile{
+    display: none;
+}
+
+@media(max-width: 769px){
+    ::ng-deep .p-card{
+        
+    }
+    .group-mobile{
+        
+    }
+}

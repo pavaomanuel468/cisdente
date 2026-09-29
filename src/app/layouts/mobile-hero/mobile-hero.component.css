@@ -1,0 +1,12 @@
+figure{
+    margin-top: 185px;
+}
+figure img{
+    width: 100%;
+}
+@media(min-width: 769px){
+    figure{
+        display: none;
+    }
+}
+

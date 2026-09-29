@@ -1,0 +1,67 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+.main{
+  display: flex;
+  align-items: center;
+  
+}
+.main div{
+    gap: 25px;
+}
+.main div img{
+    width: 350px;
+    height: 450px;
+    
+}
+.container{
+    display: block;
+    background-color: rgb(10, 246, 160);
+    padding-top: 65px;
+    height: 100%;
+}
+i{
+    font-size: 40px;
+    color: blue;
+}
+h3{
+    color: rgb(83, 30, 30);
+    text-align: center;
+}
+h4{
+    color: black;
+    text-align: center;
+}
+.container-1{
+    display: flex;
+}
+.container-2{
+    display: flex;
+}
+@media(max-width: 769px){
+    .heroSection{
+        display: none;
+    }
+    .main{
+        display: block;
+    }
+    .container{
+        height: 60%;
+        
+    }
+    .main div {
+        justify-self: center;
+        padding-top: 10px;
+        gap: 15px;
+    }
+    i{
+        margin-left: 60px;
+    }
+
+}
+@media(max-width: 1024px){
+    .heroSection{
+        display: none;
+    }
+}

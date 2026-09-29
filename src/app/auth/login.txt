@@ -1,0 +1,91 @@
+.container{
+    padding-top: 235px; 
+    padding-bottom: 105px; 
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.inputLogo{
+    margin-left: 150px;
+}
+.container-2{
+    padding-right: 15%;
+    align-content: center;
+    background-color: rgba(58, 57, 57, 0.808);
+    padding-bottom: 12px;
+}
+input{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+input label{
+    text-align: center;
+}
+.field{
+    margin-left: 138px;
+}
+.container-2 .field input {
+    width: 310px;
+    height: 55px;
+    margin-bottom: 30px;
+}
+.container-2 .inputLogo{
+    padding: 5px;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;  
+}
+.container-2 .inputLogo i{
+    font-size: 3.8rem;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(17, 17, 93);
+    color: white;
+    border-radius: 50px;
+}
+.pi-user,.pi-lock{
+    font-size: 2rem;
+    padding: 12px;
+    background-color: rgb(13, 17, 70);
+    color: white;
+}
+.container .options{
+    display: flex;
+    gap: 130px;
+    margin-left: 139px;
+}
+.options{
+    margin-bottom: 45px;
+}
+.remember {
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.novaConta{
+    margin-left: 170px;
+}
+p-button{
+    width: 365px;
+    margin-left: 147px;
+    margin-bottom: 23px;
+}
+@media(max-width: 1024px){
+    .container-1{
+        display: none;
+    }
+}
+
+  alert("Caro cliente, antes de faser o registro, queremos lhe informar que esse é um cadastro temporario, apois a saida da aplicação o seu cadastro será inexistente.")
+    this.users.push(user)
+    this.users.forEach((element)=>console.log(
+      `Nome: ${element.nome} Sobre-nome: ${element.sobrenome}
+      E-mail: ${element.email} Data de nascimento: ${element.dataNascimento}
+      Senha: ${element.senha} Confirmar Senha: ${element.confirmarSenha}`
+    ))

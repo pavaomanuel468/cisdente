@@ -1,0 +1,151 @@
+.helpers{
+    display: flex;
+}
+.footer{
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e2e8f0;
+    padding: 60px 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: #38bdf8;
+    opacity: 0.1;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+.description{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.footer .icones .pi{
+    font-size: 35px;
+    color: red;
+}
+.footer h4{
+    color: #fff;
+    margin-bottom: 15px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer ul li{
+
+    margin-bottom: 10px;
+
+}
+.footer ul li a{
+    
+    text-decoration: none;
+    color: #94a3b8;
+    transition: all 0.3s ease;
+
+}
+.footer ul li a:hover{
+
+    color: #38bdf8;
+    transform: translateX(5px);
+
+}
+.footer p{
+    font-size: 14px;
+    margin: 8px 0;
+}
+.footer i{
+    margin-right: 8px;
+}
+.socials{
+    margin-top: 15px;
+}
+.socials i{
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.socials i:hover{
+    color: #38bdf8;
+    transform: scale(1.2);
+}
+.newsletter{
+    margin-top: 20px;
+}
+.newsletter label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.input-icon {
+    display: flex;
+    align-items: center;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.input-icon i{
+    padding: 0 10px;
+    color: #38bdf8;
+}
+.input-icon input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+}
+.input-icon button{
+    background: #38bdf8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.input-icon button:hover{
+    background: #0ea5e9;
+}
+.divider{
+    margin: 30px 0 10px;
+    height: 1px;
+    background: #1e293b;
+}
+.footer-bottom{
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+}
+@media (max-width: 768px) {
+    .footer{
+        text-align: center;
+    }
+    .socials{
+        justify-content: center;
+    }
+    .input-icon{
+        flex-direction: column;
+    }
+    .input-icon input{
+        width: 100%;
+    }
+    .input-icon button{
+        width: 100%;
+    }
+}

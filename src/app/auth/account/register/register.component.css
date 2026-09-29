@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+}
+.fields{
+    display: flex;
+    gap: 25px;
+}
+.containerField div input, 
+.containerField-2 div input{
+    width: 350px;
+    height: 50px;
+}
+::ng-deep .p-datepicker{
+    width: 300px;
+    height: 50px;
+}
+
+.forgot{
+    text-decoration: none;
+    outline: none;
+    margin-left: 210px;
+}
+.remember{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.remember div{
+    margin-bottom: 8px;
+}
+.btnRegistry{
+    justify-self: center;
+}
+.p-button-primary,
+.p-button-danger{
+    width: 200px;
+}
+.btn-registry{
+    width: 500px;  
+}
+.optionalButtons{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-self: center;
+    display: flex;
+    gap: 30px;
+}
+.icones{
+    text-align: center;
+    
+}
+.icones i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+@media(max-width: 1024px){
+    .image{
+        display: none;
+        margin: 0;
+    }
+    .containerField div input  ::placeholder{
+        display: "";
+    }
+    
+}
+@media(max-width: 1400px){
+    .image{
+        width: 300px;
+        margin: 0;
+    }
+   
+    .forgot{
+        margin: 0;
+    }
+    .btn-registry{
+        width: 300px;  
+    }
+    .p-button-primary,
+    .p-button-danger{
+        width: 250px;
+    }
+    
+}
+/*respo para mobile*/
+@media(max-width: 600px){
+    .image{
+        display: none;
+        margin: 0;
+    }
+    .optionalButtons{
+        display: block;
+    }
+    .optionalButtons div{
+        margin-top: 5px;
+    }
+}
+@media(max-width: 769px){
+    .image{
+        display: none;  
+    }
+    .titles{
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .iconeRegistry i{
+        font-size: 38px;
+        color: blue;
+    }
+    .fields{
+        display: block;
+        justify-self: center;
+    }
+    .fields label{
+        display: none;
+    }
+    .containerField div input, 
+    .containerField-2 div input{
+        width: 300px;
+    }
+    .btn-registry{
+        width: 300px;  
+    }
+    
+    .p-button-primary,
+    .p-button-danger{
+        width: 200px;
+    }
+    
+    .forgot{
+        margin: 0;
+    }
+}

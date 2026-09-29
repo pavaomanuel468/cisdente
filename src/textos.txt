@@ -1,0 +1,55 @@
+<h3 id="title" class="text-primary mb-3">Como nós trabalhamos</h3>
+                <p class="text-secondary mb-4">
+                    Nosso trabalho é baseado wm organização, profissionalismo e atenção<br>
+                    aos detalhes em cada etapa do processo. Começamos entendendo as necessidades<br>
+                    de cada cliente, analisando cuidadosamente suas expectativas opara oferecer o melhor<br>
+                    de nós.
+                </p>
+
+@media(max-width: 769px){
+    .container div{
+        display: block;
+    }
+}
+@media(max-width: 1024px){
+    section .container-1{
+        display: block;
+    }
+}
+class="flex gap-2 justify-content-center"
+background-color: rgb(3, 244, 172);
+background-color: rgba(211, 211, 211, 0.321);
+
+@media(max-width: 1024px){
+    .container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    .cn1-Children{
+        display: block;
+        
+    }
+    .cn1-children2{
+        display: block;
+    }
+}
+@media(max-width: 769px){
+    .container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+        display: block;
+    }
+    .cn1-Children{
+        display: block;
+        
+    }
+    .cn1-children2{
+        display: block;
+    }
+}
+section:first-child{
+    margin-top: 80px;
+}
+<h2 class="mobileTitle">Cisdente</h2>

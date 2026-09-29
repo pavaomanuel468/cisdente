@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+}
+.mobile{
+    display: none;
+}
+.title{
+    color: rgba(15, 147, 39, 0.927);
+    font-size: 30px;
+}
+i{
+    font-size: 4rem;
+    padding-top: 32px;
+    color: white;
+    background-color: rgb(3, 19, 244);
+    border-radius: 100%;
+    width: 200px;
+    height: 140px;
+    margin-bottom: 1rem;
+}
+@media(max-width: 769px){
+    .container{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .container figure {
+        display: none;
+    }
+    .container-child{
+        margin-left: 20px;
+    }
+    .mobile .container-2{
+       background-color: rgba(211, 211, 211, 0.321);
+    }
+    .mobile .container-2 h4{
+        text-align: center;
+        color: rgb(89, 9, 9);
+    }
+
+    .mobile .container-2 h5{
+        text-align: center;
+    }
+    .mobile .container-2 #texto{
+        text-align: center;
+        color: black;
+    }
+    .mobile .container-2 #p-s{
+        text-align: center;
+        color: black;
+
+    }
+    .mobile .container-2 p{
+        text-align: center;
+        color: rgb(89, 9, 9);
+
+    }
+
+    .mobile .container-2 h3{
+        text-align: center;
+        color: rgb(89, 9, 9);
+
+    }
+    
+    .mobile .container-2 img{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 40px; 
+    }
+}
+@media(max-width: 1024px){
+    .secondContainerChild{
+        display: none;
+    }
+}

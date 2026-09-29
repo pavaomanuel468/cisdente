@@ -1,0 +1,76 @@
+
+<p-toolbar class="first-toolbar">
+  <div class="p-toolbar-group-start">
+
+    <div class="d-flex align-items-center me-4">
+      <h2 class="mobileTitle">Cisdente</h2>
+      <i class="fas fa-tooth" style="font-size: 2rem; width: 90px; height: 40px; color: rgba(0, 0, 255, 0.717);"></i>
+      <h2 class="desktopTitle"><span class="fw-bold fs-4 d-none d-md-block" style="color: rgb(12, 84, 89);">Cisdente</span></h2>
+    </div>
+
+  </div>
+
+  <div class="p-toolbar-group-end">
+    <div class="d-flex align-items-center me-3 inputSearch">
+      <span class="p-input-icon-left search-wrapper">
+        <input type="text" class="inputSearchChildren" placeholder="Pesquisar">
+        <button class="buttonSearch"><i class="pi pi-search" style="color: white;"></i></button>
+      </span>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center me-2">
+    <p-overlaypanel #notificationPanel>
+      <div class="p-3" style="min-width: 250px;">
+        <h6 class="mb-3">Notificações</h6>
+        @for (item of items; track $index) {
+          <div class="d-flex align-items-center mb-2 p-2 border-bottom">
+            <i [class]="item.icon" class="me-2 text-primary"></i>
+            <span> {{item.label}} </span>
+          </div>
+        }
+      </div>
+    </p-overlaypanel>
+
+    <button pButton type="button" icon="pi pi-bell" class="p-buttom-rounded p-button-text p-button-lg me-2"
+    (click)="notificationPanel.toggle($event)" pBadge="3"  badgeStyleClass="p-badge-secondary" style="background-color: rgb(13, 0, 254); color: white;
+    border: none; outline: none;">
+    </button> 
+
+    <button pButton type="button" icon="pi pi-bell" class="p-buttom-rounded p-button-text p-button-lg me-2"
+    (click)="notificationPanel.toggle($event)" pBadge="3"  badgeStyleClass="p-badge-secondary" style="background-color: rgb(13, 0, 254); color: white;">
+    </button>
+
+    <button pButton type="button" icon="pi pi-bell" class="p-buttom-rounded p-button-text p-button-lg me-2"
+    (click)="notificationPanel.toggle($event)" pBadge="3"  badgeStyleClass="p-badge-secondary" style="background-color: rgb(13, 0, 254); color: white;" >
+    </button>
+    
+  </div>
+
+  <div class="social-icons d-flex align-items-center m-3">
+    
+    <p-button icon="pi pi-sign-out" label="Login" routerLink="/login"></p-button> 
+    <button pButton type="button" icon="pi pi-sign-out" label="Sair" (click)="logout()" routerLink="/login" style="margin-left: 5px;"></button>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <p-avatar icon="pi pi-user" styleClass="p-mr-2" shape="circle" class="me-2"></p-avatar>
+
+    <p-menu #userMenu [popup]="true" [model]="userMenuItems">
+
+      <button pButton type="button" icon="pi pi-chevron-down" class="p-buttom-rounded p-button-text p-button-sm"
+      (click)="userMenu.toggle($event)" >
+      </button>
+
+    </p-menu>
+
+  </div>
+
+  <div class="d-md-none ms-2">
+    <p-button icon="pi pi-bars" (onClick)="mobileMenu.toggle($event)" styleClass="p-buttom-rounded p-button-text"></p-button>
+    <p-menu #mobileMenu [popup]="true" [model]="items"></p-menu>
+  </div>
+
+</p-toolbar>
+
+

@@ -1,0 +1,146 @@
+section{
+    margin: 0%;
+    padding: 0%;
+    background-color:rgb(3, 244, 172);
+
+}
+section header h3{
+    padding: 10px;
+    color: rgb(12, 12, 103);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-left: 10%;
+    padding-bottom: 13px;
+}
+.cn1-Children{
+    display: flex;
+    background-color: white;
+    color: #0a342d;
+    border-radius: 12px;
+}
+.enderecos{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.enderecos-2{
+    display: flex;
+    margin: 0%;
+    background-color: white;
+    border-radius: 12px;
+    margin: 5px;
+}
+.enderecos ul{
+    margin-left: 0%;
+}
+.cn1-Children ul{
+    padding-top: 3rem;
+    margin-left: 0rem;
+    margin: 0%;
+}
+.cn1-Children ul li{
+    margin-top: 3px;
+}
+.cn1-Children ul header{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cn1-children2{
+    display: flex;
+    margin-top: 25px;
+    color: #0a342d;
+    border-radius: 12px;
+}
+.cn1-children2 ul header h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cn1-children2 ul li{
+    margin-top: 3px;
+}
+.cn1-children2 ul p-button{
+    margin-top: 25px;
+    background: #00ffd5;
+}
+.container-2{
+    background-color: white;
+    color: #0a342d;
+    border-radius: 12px;
+    width: 320px;
+}
+.cn2-children{
+    text-decoration: none;
+    list-style: none;
+}
+.cn2-children li i{
+    color: rgb(12, 12, 103);
+    margin-left: 10px;
+}
+.cn2-children li input{
+    border: none;
+    outline: none;
+    margin-left: 20px
+}
+.cn2-children li{
+    gap: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    background: #00ffd5;
+    width: 250px;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+@media(max-width: 1024px){
+    .container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    .cn1-Children{
+        display: block;
+        
+    }
+    .cn1-children2{
+        display: block;
+    }
+}
+@media(max-width: 769px){
+    .container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+        display: block;
+    }
+    .container-1{
+        display: none;
+    }
+    .container-1 .perfil{
+        text-align: center;
+        color: rgb(89, 9, 9);
+        font-weight: bold;
+    }
+    .cn1-children2{
+       display: block;
+       justify-items: center;
+       
+    }
+    .container-child{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cn1-children2 header{
+        text-align: center;
+    }
+    .container-2{
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+}

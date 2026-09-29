@@ -1,0 +1,46 @@
+#container{
+    
+    background-color: rgb(91, 111, 116);
+}
+#container-child{
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+}
+#container-child #buttonsOptionals button{
+    margin: 5px;
+}
+.title{
+    font-weight: bold;
+    color: rgb(202, 212, 213);
+}
+.container-2{
+    padding: 8px;
+}
+.agenda-container{
+    padding: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.tabela-container{
+    flex: 1;
+}
+.descricao{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.descricao textarea{
+    width: 100%;
+    resize: vertical;
+}
+.descricao label{
+    font-weight: 600;
+}
+#marcar-horario{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}

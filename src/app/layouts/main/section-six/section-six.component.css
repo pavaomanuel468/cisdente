@@ -1,0 +1,48 @@
+
+section{
+        
+        background-image: url('/dente.jpg');
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+.container-child1{
+    
+    display: flex;
+    gap: 95px;
+    justify-content: center;
+}
+.container-child1 i{
+        gap: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+}
+@media(max-width: 769px){
+    section{
+        background-color: rgba(224, 253, 252, 0.486);
+    }
+    .container-child1{
+        display: block;
+        background-image: url('/dente.jpg');
+    }
+    .container-child1 i{
+        gap: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 1024px){
+     section{
+        background-color: rgba(224, 253, 252, 0.486);
+    }
+    .container-child1{
+        display: block;
+        background-image: url('/dente.jpg');
+        
+    }
+    .container-child1 i{
+        gap: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    }
+}

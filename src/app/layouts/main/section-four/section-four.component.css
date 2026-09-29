@@ -1,0 +1,79 @@
+section{
+    background-color: rgba(211, 211, 211, 0.321);
+    margin: 0%;
+}
+.container{
+    display: flex;
+    gap: 30px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+.container-1 .container-1-child div img{
+    width: 300px;
+    height: 250px;
+    border-radius: 18px;
+}
+.container-1-child2 div img{
+    border-radius: 18px;
+}
+.container-1 .container-1-child{
+    display: flex;
+    gap: 20px;
+}
+.container-2 .container-2-child2 div{
+    margin-top: 15px;
+}
+.container-1 .container-1-child div h4 {
+        
+    background-color: rgba(211, 211, 211, 0.321);
+
+}
+.container-1 .container-1-child div p {
+        
+    background-color: rgba(211, 211, 211, 0.321);
+
+}
+@media(max-width: 769px){
+    .container{
+        display: block;
+    }
+    .container-1 .container-1-child{
+        display: block;
+    }
+    .container-1 .container-1-child div img{
+        width: 100%;
+        height: 350px;
+
+    }
+    .container-1 .container-1-child div h4 {
+       
+        text-align: center;
+    }
+    .container-1 .container-1-child div p {
+       
+        text-align: center;
+    }
+}
+@media(max-width: 1024px){
+    .container{
+        display: block;
+    }
+      .container-1 .container-1-child div img{
+        width: 100%;
+        height: 350px;
+
+    }
+    .container-1 .container-1-child div h4 {
+       
+        text-align: center;
+    }
+    .container-1 .container-1-child div p {
+       
+        text-align: center;
+    }
+   
+    ::ng-deep .container .container-2-child2 .w-full:hover{
+        background-color: none;
+        background: none;
+    }
+}

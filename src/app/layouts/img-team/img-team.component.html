@@ -1,0 +1,79 @@
+<div class="desktop">
+        <img src="logo-lads.jpg" alt="">
+</div>
+
+<div class="carousel">
+
+    <p-carousel 
+        [value]="items" [numVisible]="1", [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
+
+        <ng-template let-item pTemplate="item">
+
+            <div class="card">
+                <h2 style="color: orangered;"> {{item.title}} </h2>
+                <p style="color: rgb(89, 9, 9);"> {{item.text}} </p>
+
+                <div class="container">
+
+                <h4> <strong> {{item.titulo}} </strong> </h4>
+                <h5 class="plain">
+                    <strong> {{item.subTitulo}} <br> </strong> 
+                </h5>
+                <br>
+                <p id="dialogo"> {{item.dialogo}} </p>
+            
+                <p id="p-s">
+                    Sinta-se seguro com os <strong> Planos De Saúde da </strong>  <br> Cisdente.
+                </p>
+                <p>
+                <strong> Beneficie dos nossos melhores acordos convencionados e proteja até <br> Beneficiarios. </strong>
+                </p>
+
+                <h3>
+                    TODO O CUIDADO QUE VOCÊ <br> PRECISA SÓ ENCONTRAS AQUI!
+                </h3>
+
+
+                <img [src]="item.image" alt="">
+                </div>
+            </div>
+
+        </ng-template>
+
+    </p-carousel>
+</div>
+<div class="mobile">
+
+    <div class="container">
+
+        <h4> <strong>PLANOS DE SAÚDE CISDENTE</strong> </h4>
+        <h5 class="plain">
+            <strong>Temos o plano certo <br> para si.</strong> 
+        </h5>
+        <p id="texto">
+            Os nossos panos de saúde são feitos padronizadamente para albergar o melhor possivel para todos 
+            os nossos clientes. Por isso, se sinta confortavel para escolher os mais variadissimos planos de 
+            saúde da Cisdente porque Juntos Contamos Para Um Futuro Melhor!
+        </p>
+        <p id="p-s">
+            Sinta-se seguro com os <strong> Planos De Saúde da </strong>  <br> Cisdente.
+        </p>
+        <p>
+           <strong> Beneficie dos nossos melhores acordos convencionados e proteja até <br> Beneficiarios. </strong>
+        </p>
+
+        <h3>
+            TODO O CUIDADO QUE VOCÊ <br> PRECISA SÓ ENCONTRAS AQUI!
+        </h3>
+
+        <div>
+            <br>
+            <p-button label="CONHEÇA OS PLANOS" icon="pi pi-arrow-right" iconPos="right"></p-button>
+          
+            <img src="logo-lads.jpg" alt="">
+        </div>
+
+    </div>
+    
+    
+</div>
