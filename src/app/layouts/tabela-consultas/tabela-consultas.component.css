@@ -1,0 +1,115 @@
+.consultas-container{
+    width: 100%;
+    padding: 50px 6%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+.cabecalho{
+    margin-bottom: 30px;
+}
+.subtitulo{
+    color: #159a9c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.cabecalho h1{
+    margin: 8px 0;
+    font-size: 32px;
+    color: #123b5d;
+    font-weight: 700;
+}
+.cabecalho p{
+    margin: 0;
+    color: #718096;
+    font-size: 15px;
+}
+.tabela-card{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 8px 30px rgba(20, 60, 90, 0.08);
+    overflow: hidden;
+}
+.nome-consulta{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: #183b56;
+}
+.icone{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f8f8;
+    color: #159a9c;
+}
+.descricao{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #526777;
+    font-size: 14px;
+}
+.duracao i{
+    color: #159a9c;
+}
+.preco{
+    font-weight: 700;
+    color: #123b5d;
+    font-size: 15px;
+}
+.btn-agendar{
+    background: #159a9c !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 ip !important;
+    padding: 9px 15px !important;
+}
+.btn-agendar{
+    background: #117f81 !important;
+}
+:host ::ng-deep .tabela-consultas .p -datatable-thead > tr > th{
+    background: #f1f7fa;
+    color: #35546b;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 18px 16px;
+    border: none;
+}
+:host ::ng-deep .tabela-consultas .p -datatable-tbody > tr > th{
+    padding: 16px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+}
+:host ::ng-deep .tabela-consultas .p -datatable-tbody > tr:hover{
+    background: #f8fcfd;
+}
+:host ::ng-deep .tabela-consultas .p -paginator{
+    border: none;
+    padding: 15px;
+}
+.sem-resultados{
+    text-align: center;
+    padding: 40px !important;
+    color: #718096;
+}
+
+@media(max-width: 768px){
+    .consultas-container{
+        padding: 30px 15px;
+    }
+    .cabecalho h1{
+        font-size: 26px;
+    }
+    .tabela-card{
+        padding: 3px;
+    }
+   .desc{
+    display: none;
+   }
+}

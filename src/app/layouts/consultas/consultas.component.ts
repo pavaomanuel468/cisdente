@@ -8,11 +8,11 @@ import { TextareaModule } from 'primeng/textarea';
 import{TableModule} from 'primeng/table';
 import { InputText } from "primeng/inputtext";
 import { SectionSixComponent } from "../main/section-six/section-six.component";
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-consultas',
-  imports: [ButtonModule, ButtonGroupModule, DatePicker, SelectModule, FormsModule, TextareaModule, TableModule, InputText, SectionSixComponent],
+  imports: [ButtonModule, ButtonGroupModule, DatePicker, SelectModule, FormsModule, TextareaModule, TableModule, InputText, SectionSixComponent, RouterLink],
   templateUrl: './consultas.component.html',
   styleUrl: './consultas.component.css'
 })

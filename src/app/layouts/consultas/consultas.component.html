@@ -7,7 +7,7 @@
         </div>
         <div id="buttonsOptionals">
 
-            <p-buttongroup>
+            <p-buttongroup class="times-buttons">
                 <p-button> <i class="pi pi-calendar"></i> DIÁRIO</p-button>
                 <p-button> <i class="pi pi-calendar-plus"></i> SEMANAL</p-button>
                 <p-button> <i class="pi pi-calendar"></i> MÊS</p-button>
@@ -18,7 +18,7 @@
 
         <div id="divisor"></div>
 
-        <p-button label="ATUALIZAR" icon="pi pi-refresh"></p-button>
+        <p-button label="ATUALIZAR" icon="pi pi-refresh" routerLink="/main"></p-button>
 
     </div>
 
@@ -34,18 +34,19 @@
             </div>
         </div>
 
-        <p-button> <i class="pi pi-plus"></i> NOVO AGENDAMENTO</p-button>
+        <p-button class="novoAgendamento"> <i class="pi pi-plus"></i> NOVO AGENDAMENTO</p-button>
 
         <div>
     
             <p-select
-                [options]="opcoes" (ngModel)="opcaoSelecionada" optionLabel="nome" placeholder="SELECIONAR">
+                [options]="opcoes" (ngModel)="opcaoSelecionada" optionLabel="nome" placeholder="SELECIONAR"
+                class="novoAgendamento">
             </p-select>
             
         </div>
 
         <p-datepicker (ngModel)="dataSelecionada" placeholder="SELECIONAR DATA"
-            dateFormat="dd/mm/yy" showIcon="true">
+            dateFormat="dd/mm/yy" showIcon="true" class="novoAgendamento">
         </p-datepicker>
     
     </div>
@@ -62,10 +63,10 @@
 
                 <ng-template pTemplate="header">
                     <tr>
-                        <th>DATA</th>
+                        <th class="date">DATA</th>
                         <th>HORÁRIO</th>
                         <th>PACIENTE</th>
-                        <th>PROCEDIMENTO</th>
+                        <th class="proc">PROCEDIMENTO</th>
                         <th>ESTADO</th>
                     </tr>
                 </ng-template>
@@ -73,7 +74,7 @@
                 <ng-template pTemplate="body" let-consulta let-i="rowIndex">
 
                     <tr>
-                        <td> {{consulta.data}} </td>
+                        <td class="date"> {{consulta.data}} </td>
                         <select name="" id="marcar-horario">
                             <option value="" id="title-hora">MARCAR HORÁRIO</option>
                             <option value="08:30"id="hora" >08:30</option>
@@ -83,7 +84,7 @@
                         <td> 
                             <input type="text" pInputText (ngModel)="consulta.paciente" placeholder="Nome do paciente">    
                         </td>
-                        <td>
+                        <td class="proc">
                             <p-select [options]="procedimentos" (ngModel)="consulta.procedimento" placeholder="Selecionar" appendTo="body"></p-select>
                         </td>
                         <td>

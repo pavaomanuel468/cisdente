@@ -5,13 +5,14 @@ import { catchError, delay, ErrorObserver, Observable, of, pipe, take, tap } fro
 import { login } from '../auth/login/login';
 import { LoginResponse } from '../auth/login/LoginResponse';
 import { Router} from '@angular/router';
+import { environements } from '../environments/environments.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserServisseService {
 
-  private readonly API = 'auth'
+  private readonly API = environements.apiUrl;
 
   private router = inject(Router)
 

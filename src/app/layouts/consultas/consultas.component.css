@@ -44,3 +44,26 @@
     padding: 10px;
     border-radius: 8px;
 }
+@media(max-width: 768px){
+    .container-child{
+        padding: 30px 15px;
+    }
+    .tabela-container{
+        padding: 3px;
+    }
+    .date{
+        display: none;
+    }
+    .proc{
+        display: none;
+    }
+    .agenda-container{
+        display: block;
+    }
+    .times-buttons{
+        display: none;
+    }
+    .novoAgendamento{
+        display: none;
+    }
+}
